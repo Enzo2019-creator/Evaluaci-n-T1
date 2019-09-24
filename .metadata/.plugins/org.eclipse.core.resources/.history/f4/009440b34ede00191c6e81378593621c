@@ -1,0 +1,5 @@
+package pe.edu.upn.demo.model.repository;
+
+public interface EnzoCastilloRepository {
+
+}

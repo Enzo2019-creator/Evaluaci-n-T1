@@ -1,0 +1,52 @@
+package pe.edu.upn.demo.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinColumns;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "medicos")
+
+public class Medico {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
+	
+	@Column(name = "ape_nom",length = 60)
+	private String nombre;
+	
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "especial_id")
+	private Especialidad especialidad;
+	
+	@Column(name = "dir_medico",length = 60)
+	private String direccion;
+	
+	@Column(name = "fono")
+	private Integer telefono;	
+	
+	@OneToMany(mappedBy = "medico",fetch = FetchType.LAZY)
+	private List<Paciente> pacientes;
+	
+	@ManyToMany
+	@JoinTable(name = "medico_consultario",joinColumns = @JoinColumn(columnDefinition = "medico_id"),inverseJoinColumns = @JoinColumn(columnDefinition = "consultorio_cod"))
+	private List<Consultorio> consultorios;
+	
+	public Medico() {
+		pacientes = new ArrayList<>();
+		consultorios = new ArrayList<>();
+	}
+}

@@ -1,0 +1,13 @@
+package pe.edu.upn.demo.model;
+
+import java.util.List;
+
+public class Medico {
+	private String codigo;
+	private String nombre;
+	private Especialidad especialidad;
+	private String direccion;
+	private Integer telefono;	
+	private List<Paciente> pacientes;
+	private List<Consultorio> consultorios;
+}

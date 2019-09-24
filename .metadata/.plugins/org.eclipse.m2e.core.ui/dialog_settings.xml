@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\Docente\Documents\workspace-spring-tool-suite-4-4.3.2.RELEASE\hrsN00062649"/>
+			<item value="C:\Users\Docente\Documents\workspace-spring-tool-suite-4-4.3.2.RELEASE\spring-boot-hospital"/>
+			<item value="C:\Users\Docente\Documents\workspace-spring-tool-suite-4-4.3.2.RELEASE\spring-hospital\src\main\java\pe\edu\upn\demo\service\impl\ConsultorioServiceImpl.java"/>
+			<item value="C:\Users\Docente\Documents\workspace-spring-tool-suite-4-4.3.2.RELEASE\spring-hospital"/>
+			<item value="C:\Users\Docente\Documents\workspace-spring-tool-suite-4-4.3.2.RELEASE\demo"/>
+			<item value="C:\Users\Docente\Desktop\demo"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

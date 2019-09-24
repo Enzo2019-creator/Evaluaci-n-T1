@@ -1,0 +1,53 @@
+package pe.edu.upn.demo.service.impl;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import pe.edu.upn.demo.model.entity.EnzoCastillo;
+import pe.edu.upn.demo.model.repository.EnzoCastilloRepository;
+import pe.edu.upn.demo.service.EnzoCastilloService;
+
+public class EnzoCastilloServiceImpl implements EnzoCastilloService {
+
+	@Autowired
+	EnzoCastilloRepository enzoCastilloRepository;
+	
+	@Override
+	public List<EnzoCastillo> findAll() throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Optional<EnzoCastillo> findById(String id) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public EnzoCastillo save(EnzoCastillo entity) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public EnzoCastillo update(EnzoCastillo entity) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteById(String id) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteAll() throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
